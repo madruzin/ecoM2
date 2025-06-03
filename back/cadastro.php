@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Cadastro - Eco Locadora</title>
-   <link rel="stylesheet" href="../m2/estilos/formulario.css" />
+   <link rel="stylesheet" href="../ecoM2/estilos/formulario.css" />
 </head>
 <body>
 

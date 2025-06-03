@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Contato - Eco Locadora</title>
-   <link rel="stylesheet" href="../m2/estilos/formulario.css" />
+   <link rel="stylesheet" href="../ecoM2/estilos/formulario.css" />
 </head>
 <body>
 
@@ -13,7 +13,7 @@
         <nav class="nav">
             <a href="index.php">Início</a>
             <a href="login.php">Login</a>
-            <a href="cadastro.php">Cadastro</a>
+            <a href="contato.php">Contato</a>
         </nav>
     </div>
 </header>

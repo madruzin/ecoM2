@@ -1,29 +1,12 @@
-/* ================== */
-/* Variáveis de cores */
-/* ================== */
-:root {
-    --bg-color: #F9FAFB;
-    --primary-color: #2A3E59;
-    --secondary-color: #56778C;
-    --accent-color: #0378A6;
-    --text-color: #333;
-    --light-color: #A7BFCF;
-    --card-bg: #FFFFFF;
-    --shadow: rgba(0, 0, 0, 0.1);
-}
-
-/* =============== */
 /* Reset básico    */
-/* =============== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ====================== */
+
 /* Layout flex para footer */
-/* ====================== */
 html, body {
     height: 100%;
     margin: 0;
@@ -42,64 +25,78 @@ body {
     line-height: 1.6;
 }
 
-/* =============== */
+
 /* Header          */
-/* =============== */
-header {
-    background-color: var(--primary-color);
-    padding: 1rem 2rem;
-    box-shadow: 0 4px 12px var(--shadow);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+.container-titulo {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;     
+    justify-content: center;
+    gap: 5px;
+  }
+
+.titulo1 {
+    color:	#ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+.titulo2 {
+    color:	#ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.container-cabecalho {
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+    background-image: linear-gradient(to bottom, #1C1C1C, 	black);
+    color: white;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-.logo {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--light-color);
-    letter-spacing: 1.5px;
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
 }
 
-.nav a {
-    color: var(--light-color);
-    margin-left: 2rem;
+a {
+    color: #7d7d7d;
     text-decoration: none;
-    font-weight: 500;
-    position: relative;
-    transition: color 0.3s ease;
+    text-align: center;
+    display: inline-block;
+    transition: .2s;
 }
 
-.nav a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -4px;
-    left: 0;
-    background-color: var(--accent-color);
-    transition: width 0.3s ease;
+a:hover {
+    color: #ffff;
+    transform: scale(1.05);
 }
 
-.nav a:hover {
-    color: var(--accent-color);
+button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 30px;
+    cursor: pointer;
 }
 
-.nav a:hover::after {
-    width: 100%;
-}
 
-/* ========================= */
 /* Main - Cards de veículos  */
-/* ========================= */
 .veiculos {
     max-width: 1200px;
     margin: 3rem auto;
@@ -141,52 +138,18 @@ header {
 
 .veiculo-card h2 {
     font-size: 1.4rem;
-    color: var(--primary-color);
+    color: 		#4682B4;
     margin: 1rem 1rem 0.5rem;
     font-weight: 700;
     letter-spacing: 0.03em;
 }
 
-.veiculo-card p {
-    margin: 0 1rem 0.75rem;
-    color: var(--secondary-color);
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-.veiculo-card .preco {
-    margin: 0 1rem 1rem;
-    color: var(--accent-color);
-    font-size: 1.1rem;
-    font-weight: 700;
-}
-
-.veiculo-card button {
-    margin: 0 1rem 1.5rem;
-    padding: 0.6rem 1.2rem;
-    background-color: var(--accent-color);
-    border: none;
-    border-radius: 8px;
-    color: white;
-    font-weight: 600;
-    font-size: 1rem;
-    letter-spacing: 0.05em;
-    cursor: pointer;
-    align-self: flex-start;
-    box-shadow: 0 4px 10px rgba(3, 120, 166, 0.3);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.veiculo-card button:hover {
-    background-color: #025f79;
-    box-shadow: 0 6px 14px rgba(2, 95, 121, 0.5);
-}
 
 /* =============== */
 /* Footer          */
 /* =============== */
 footer {
-    background-color: var(--primary-color);
+    background-color: 		#4682B4;
     color: var(--light-color);
     text-align: center;
     padding: 1rem 0;
