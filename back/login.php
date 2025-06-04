@@ -2,14 +2,14 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Login - Eco Locadora</title>
-   <link rel="stylesheet" href="../estilos/formulario.css" />
+    <title>Login - Start</title>
+   <link rel="stylesheet" href="../estilos/login.css" />
 </head>
 <body>
 
 <header>
     <div class="container">
-        <h1 class="logo">Eco Locadora</h1>
+        <h1 class="logo">StartCar</h1>
         <nav class="nav">
             <a href="index.php">Início</a>
             <a href="cadastro.php">Cadastro</a>

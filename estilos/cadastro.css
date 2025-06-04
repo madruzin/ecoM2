@@ -1,0 +1,184 @@
+/* ================== */
+/* Variáveis de cores */
+/* ================== */
+:root {
+    --bg-color: #1C1C1E;          /* Cinza muito escuro — fundo principal */
+    --primary-color: #D72638;     /* Vermelho queimado — destaque, chama a atenção */
+    --secondary-color: #5A5A5A;   /* Cinza médio — elementos secundários */
+    --accent-color: #FF5E5B;      /* Vermelho vibrante — para botões e ações */
+    --text-color: #E0E0E0;        /* Cinza bem claro — para textos legíveis */
+    --light-color: #3A3A3C;       /* Cinza escuro — bordas e divisores */
+    --card-bg: #2C2C2E;           /* Cinza intermediário — fundo de cards e inputs */
+    --shadow: rgba(0, 0, 0, 0.3); /* Sombra densa — para destacar elementos */
+}
+
+
+/* Reset básico    */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--accent-color);
+}
+
+header {
+    background-color:var(--primary-color);
+    padding: 1rem 2rem;
+    box-shadow:black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-color);
+    letter-spacing: 1.5px;
+}
+
+.nav a {
+    color: var(--light-color);
+    margin-left: 2rem;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.nav a:hover {
+    color: var(--accent-color);
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+/* main e formulario*/
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 2rem;
+}
+
+.form-container {
+    background-color:white;
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    box-shadow: black;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.form-container h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-container input {
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--light-color);
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-container input:focus {
+    border-color: var(--accent-color);
+    box-shadow: var(--card-bg);
+    outline: none;
+}
+
+.form-container button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--accent-color);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color:var(--light-color);
+    box-shadow: var(--accent-color);
+}
+
+.form-container .link {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.form-container .link a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.form-container .link a:hover {
+    color:var(--light-color);
+}
+
+footer {
+    background-color:var(--secondary-color);
+    color:var(--text-color);
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    flex-shrink: 0; /
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}

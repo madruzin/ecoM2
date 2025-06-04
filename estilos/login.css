@@ -2,19 +2,18 @@
 /* Variáveis de cores */
 /* ================== */
 :root {
-    --bg-color: #F9FAFB;
-    --primary-color: #2A3E59;
-    --secondary-color: #56778C;
-    --accent-color: #0378A6;
-    --text-color: #333;
-    --light-color: #A7BFCF;
-    --card-bg: #FFFFFF;
-    --shadow: rgba(0, 0, 0, 0.1);
+    --bg-color: #1C1C1E;          /* Cinza muito escuro — fundo principal */
+    --primary-color: #D72638;     /* Vermelho queimado — destaque, chama a atenção */
+    --secondary-color: #5A5A5A;   /* Cinza médio — elementos secundários */
+    --accent-color: #FF5E5B;      /* Vermelho vibrante — para botões e ações */
+    --text-color: #E0E0E0;        /* Cinza bem claro — para textos legíveis */
+    --light-color: #3A3A3C;       /* Cinza escuro — bordas e divisores */
+    --card-bg: #2C2C2E;           /* Cinza intermediário — fundo de cards e inputs */
+    --shadow: rgba(0, 0, 0, 0.3); /* Sombra densa — para destacar elementos */
 }
 
-/* =============== */
-/* Reset básico    */
-/* =============== */
+
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -25,33 +24,22 @@ html, body {
     height: 100%;
     font-family: 'Poppins', sans-serif;
     background-color: var(--bg-color);
-    color: var(--text-color);
+    color: var(--accent-color);
 }
 
-/* =============== */
-/* Header padrão   */
-/* =============== */
 header {
-    background-color: var(--primary-color);
+    background-color:var(--primary-color);
     padding: 1rem 2rem;
-    box-shadow: 0 4px 12px var(--shadow);
+    box-shadow:black;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .logo {
     font-size: 1.8rem;
     font-weight: 700;
-    color: var(--light-color);
+    color: var(--text-color);
     letter-spacing: 1.5px;
 }
 
@@ -83,9 +71,15 @@ header {
     width: 100%;
 }
 
-/* =============== */
-/* Formulário      */
-/* =============== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* main e formulario */
 main {
     display: flex;
     justify-content: center;
@@ -95,10 +89,10 @@ main {
 }
 
 .form-container {
-    background-color: var(--card-bg);
+    background-color: white;
     padding: 2.5rem 2rem;
     border-radius: 16px;
-    box-shadow: 0 6px 12px var(--shadow);
+    box-shadow: black;
     width: 100%;
     max-width: 400px;
     display: flex;
@@ -113,7 +107,7 @@ main {
 }
 
 .form-container h2 {
-    color: var(--primary-color);
+    color:var(--primary-color);
     font-size: 1.8rem;
     font-weight: 700;
     text-align: center;
@@ -136,9 +130,27 @@ main {
 
 .form-container input:focus {
     border-color: var(--accent-color);
-    box-shadow: 0 0 8px rgba(3, 120, 166, 0.3);
+    box-shadow: var(--shadow);
     outline: none;
 }
+
+/* ===== Estilo adicionado para SELECT ===== */
+.form-container select {
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--light-color);
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color:white;
+    color: var(--secondary-color);
+}
+
+.form-container select:focus {
+    border-color: var(--accent-color);
+    box-shadow: var(--shadow);
+    outline: none;
+}
+/* ========================================= */
 
 .form-container button {
     padding: 0.75rem;
@@ -153,8 +165,8 @@ main {
 }
 
 .form-container button:hover {
-    background-color: #025f79;
-    box-shadow: 0 6px 12px rgba(3, 120, 166, 0.3);
+    background-color: var(--light-color);
+    box-shadow: var(--accent-color);
 }
 
 .form-container .link {
@@ -169,34 +181,14 @@ main {
 }
 
 .form-container .link a:hover {
-    color: #025f79;
+    color: var(--light-color);
 }
 
-/* =============== */
-/* Footer          */
-/* =============== */
 footer {
-    background-color: var(--primary-color);
-    color: var(--light-color);
+    background-color:var(--secondary-color);
+    color: var(--text-color);
     text-align: center;
     padding: 1rem 0;
     font-size: 0.9rem;
-}
-
-
-/* Adicional para a página de contato */
-
-.form-container textarea {
-    padding: 0.75rem 1rem;
-    border-radius: 10px;
-    border: 1px solid var(--light-color);
-    font-size: 1rem;
-    resize: vertical;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.form-container textarea:focus {
-    border-color: var(--accent-color);
-    box-shadow: 0 0 8px rgba(3, 120, 166, 0.3);
-    outline: none;
+    flex-shrink: 0; /* para garantir que o footer não encolha */
 }

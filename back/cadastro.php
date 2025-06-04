@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Cadastro - Eco Locadora</title>
-   <link rel="stylesheet" href="../ecoM2/estilos/formulario.css" />
+<link rel="stylesheet" href="../estilos/cadastro.css">
+
+
+
 </head>
 <body>
 
 <header>
     <div class="container">
-        <h1 class="logo">Eco Locadora</h1>
+        <h1 class="logo">StartCar</h1>
         <nav class="nav">
             <a href="index.php">Início</a>
             <a href="login.php">Login</a>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Eco Locadora - Aluguel de Veículos Elétricos</title>
+    <title>StartCar - Aluguel Inteligentes</title>
     <link rel="stylesheet" href="../ecoM2/estilos/index.css" />
 </head>
 <body>
@@ -16,7 +16,7 @@
 
         <nav class="item-cabecalho">
             <a href="../ecoM2/back/login.php">Login</a>
-            <a href="cadastro.php">Cadastro</a>
+            <a href="../ecoM2/back/cadastro.php">Cadastro</a>
             <a href="contato.php">Contato</a>
         </nav>
 
