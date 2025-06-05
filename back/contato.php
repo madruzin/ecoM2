@@ -11,8 +11,8 @@
     <div class="container">
         <h1 class="logo">Eco Locadora</h1>
         <nav class="nav">
-            <a href="index.php">Início</a>
-            <a href="login.php">Login</a>
+            <a href="../index.php">Início</a>
+            <a href="../back/login.php">Login</a>
             <a href="contato.php">Contato</a>
         </nav>
     </div>

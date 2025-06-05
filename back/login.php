@@ -11,8 +11,8 @@
     <div class="container">
         <h1 class="logo">StartCar</h1>
         <nav class="nav">
-            <a href="index.php">Início</a>
-            <a href="cadastro.php">Cadastro</a>
+            <a href="../index.php">Início</a>
+            <a href="../back/cadastro.php">Cadastro</a>
             <a href="contato.php">Contato</a>
         </nav>
     </div>
